@@ -1,0 +1,399 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOdcoeW9b4YCAKbwhQp6hbd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/damman777/DAINAM-SHELF/blob/main/Python%20Practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variables\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "DDVS8GmbraDW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "full_name = \"Damman\"\n",
+        "print(full_name)\n",
+        "\n",
+        "age = 21\n",
+        "print(age)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aExCWaQmrmkf",
+        "outputId": "f250e57e-74f7-4494-ce77-16da080f2dc5"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Damman\n",
+            "21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Input / Output"
+      ],
+      "metadata": {
+        "id": "v1DUdYOasD6D"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"Enter Your Name:\")\n",
+        "print(\"Hello\" , name)\n",
+        "\n",
+        "age =input(\"Enter Your Age:\")\n",
+        "print(\"Hi my age is\" , age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rV11-8JFsEt9",
+        "outputId": "9641487b-c0c9-45ad-cb16-dc7d816711c0"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Your Name:Damman\n",
+            "Hello Damman\n",
+            "Enter Your Age:21\n",
+            "Hi my age is 21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Data Types"
+      ],
+      "metadata": {
+        "id": "s_MQFExnsp3i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Numbers\n",
+        "\n",
+        "score = 22\n",
+        "print(type (score))\n",
+        "\n",
+        "#Strings\n",
+        "\n",
+        "my_name = \"Dainam\"\n",
+        "print(type (my_name))\n",
+        "\n",
+        "#Boolean\n",
+        "\n",
+        "condition = True\n",
+        "print(type(condition))\n",
+        "\n",
+        "#float\n",
+        "\n",
+        "decimal = 2.0\n",
+        "print(type (decimal))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jg1AqVHNsrbj",
+        "outputId": "ce76dc5a-23c6-4b0c-de22-2be748322a86"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'str'>\n",
+            "<class 'bool'>\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Comparison Operators"
+      ],
+      "metadata": {
+        "id": "B-tLAAOlty1w"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 20\n",
+        "b = 70\n",
+        "print(a > b)\n",
+        "\n",
+        "c = 88\n",
+        "d = 90\n",
+        "print(c == d)\n",
+        "\n",
+        "e = 60\n",
+        "f = 60\n",
+        "print(e >= f)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NEIFyigRtz_O",
+        "outputId": "5a8ea2ab-1f43-43b4-ed6b-1e7ced725cc1"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "False\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Logical Operators"
+      ],
+      "metadata": {
+        "id": "jRVYTGQ0uVft"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = True\n",
+        "b = False\n",
+        "print(a and b)\n",
+        "print(a or b)\n",
+        "print(not a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QUV4SpKOuWMl",
+        "outputId": "a64f963b-6446-4f2a-cd76-8bc3e08bb881"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Conditional Statements"
+      ],
+      "metadata": {
+        "id": "uioWBL9Juuhb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# if, elif, else\n",
+        "\n",
+        "age = int(input(\"Enter Your Age:\"))\n",
+        "if (age < 18):\n",
+        "  print(\"You are Child\")\n",
+        "elif (age > 18):\n",
+        "  print(\"You are Adult\")\n",
+        "elif (age >= 18):\n",
+        "  print(\"You are Eligible\")\n",
+        "else:\n",
+        "  print(\"Go\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AcWNIpnIuv0T",
+        "outputId": "dabf8874-006a-4f07-ab08-5f672354b824"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Your Age:33\n",
+            "You are Adult\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Quick Practice (use or and not)\n",
+        "\n",
+        "🔹 Example Task: Check if number is NOT between 10 and 20"
+      ],
+      "metadata": {
+        "id": "I8de99ocw042"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a Number:\"))\n",
+        "if not (20 <= num <= 80):\n",
+        "  print(\"Number is not between 20 and 80\")\n",
+        "else:\n",
+        "    print(\"Number is between 20 and 80\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VdMnsWpaw2E2",
+        "outputId": "eb4c34f2-49ab-4630-9082-e298b856c3f3"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a Number:77\n",
+            "Number is between 20 and 80\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Or"
+      ],
+      "metadata": {
+        "id": "C905uVzkx2LD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "role = input(\"Enter your role: \")\n",
+        "\n",
+        "if role == \"student\" or role == \"teacher\":\n",
+        "    print(\"Welcome!\")\n",
+        "else:\n",
+        "    print(\"Access denied.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ph9VEDLvx3kp",
+        "outputId": "745a70f9-48e7-407f-82c9-fa0a6ea7a26b"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your role: teacher\n",
+            "Welcome!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "auth = input(\"Enter your role\")\n",
+        "\n",
+        "if auth == \"Officer\" or auth == \"Head\":\n",
+        "  print(\"Hello\" , auth)\n",
+        "else:\n",
+        "  print(\"Access Denied.\")"
+      ],
+      "metadata": {
+        "id": "ZOecKlJkyO44"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Lists"
+      ],
+      "metadata": {
+        "id": "nhHaNRi-zFmd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Gadgets = [\"laptop\" , \"Mouse\" , \"Kyeboard\"]\n",
+        "print(Gadgets)"
+      ],
+      "metadata": {
+        "id": "fMSmL1jEzHyn"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
